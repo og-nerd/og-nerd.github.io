@@ -19,11 +19,36 @@
   color: #FFFFFF;
 }
 
+.Audio-player audio {
+  padding-bottom: 5%;
+  height: 30px;
+  width: 250px;
+}
+
+.Audio-control {
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5%;
+}
+
+.fas {
+  color: #FFFFFF;
+  width: 30px;
+  font-size: 0.9em;
+}
+
+.Audio-control p {
+  float: left;
+  animation-name: fade-out;
+  animation-duration: 5s;
+}
+
 .Logo-header img {
   width: 60%;
   padding-bottom: 10%;
 }
-
 
 @font-face {
   font-family: "Nintendo NES Font";
@@ -47,6 +72,11 @@
 	100% { opacity: 0; }
 }
 
+@keyframes fade-out {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 .Footer {
   position: fixed;
   left: 0;
@@ -59,8 +89,4 @@
 .Social-media-buttons i {
   font-size: 2em;
   padding: 1% 2.5%;
-}
-
-.App-link {
-  color: #61dafb;
 }
